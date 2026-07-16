@@ -1,0 +1,22 @@
+## .NET
+**/bin/
+**/obj/
+**/Logs/
+*.user
+*.suo
+.vs/
+*.dbmdl
+*.jfm
+
+## Angular / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+npm-debug.log*
+yarn-error.log*
+
+## OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

@@ -1,0 +1,28 @@
+@SoftOne_HostAddress = https://localhost:7034
+@auth = Basic YWRtaW46YWRtaW4xMjM=
+
+### Login
+POST {{SoftOne_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### Get tasks
+GET {{SoftOne_HostAddress}}/api/tasks
+Authorization: {{auth}}
+
+### Create task
+POST {{SoftOne_HostAddress}}/api/tasks
+Authorization: {{auth}}
+Content-Type: application/json
+
+{
+  "title": "New task",
+  "description": "Created from .http file",
+  "priority": 2,
+  "dueDate": "2026-07-20T00:00:00Z",
+  "isCompleted": false
+}
