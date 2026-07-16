@@ -26,6 +26,9 @@ If HTTPS has certificate issues, keep `"ssl": false` and run the backend over HT
 
 
 |----Database----|
+
+
+LocalDB connection string is in `SoftOne/appsettings.json`. Migrations live under `SoftOne/Migrations`; SQL script under `/dataBase_Script.sql`.
 Please use below script to create db with data 
 SoftOne/Migrations/dataBase_Script.sql
 |----Database----|
@@ -60,8 +63,6 @@ SoftOneAPP includes basic styling without a UI framework:
 See [SoftOneAPP/README.md](../SoftOneAPP/README.md) for UI details and where to add screenshots for GitHub.
 
 ## Database
-
-LocalDB connection string is in `SoftOne/appsettings.json`. Migrations live under `SoftOne/Migrations`; SQL script under `db/script.sql`.
 
 ## Tests
 
