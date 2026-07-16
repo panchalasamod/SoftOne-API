@@ -24,6 +24,12 @@ If HTTPS has certificate issues, keep `"ssl": false` and run the backend over HT
 | `admin`  | `admin123` |
 | `demo`   | `demo123` |
 
+
+|----Database----|
+Please use below script to create db with data 
+SoftOne/Migrations/dataBase_Script.sql
+|----Database----|
+
 ## Run API
 
 ```bash
