@@ -51,6 +51,26 @@ public static class DbInitializer
                 IsCompleted = false,
                 CreatedUserId = admin.Id,
                 CreatedDate = DateTime.UtcNow
+            },
+            new TaskItem
+            {
+                Title = "Review assignment requirements API",
+                Description = "Confirm CRUD, auth, sorting and filtering work end-to-end.",
+                Priority = 5,
+                DueDate = DateTime.UtcNow.Date.AddDays(13),
+                IsCompleted = false,
+                CreatedUserId = admin.Id,
+                CreatedDate = DateTime.UtcNow
+            },
+            new TaskItem
+            {
+                Title = "Review assignment requirements APP",
+                Description = "Confirm CRUD, auth, sorting and filtering work end-to-end. Confirm CRUD, auth, sorting and filtering work end-to-end Confirm CRUD, auth, sorting and filtering work end-to-end Confirm CRUD, auth, sorting and filtering work end-to-end Confirm CRUD, auth, sorting and filtering work end-to-end Confirm CRUD, auth, sorting and filtering work end-to-end",
+                Priority = 5,
+                DueDate = DateTime.UtcNow.Date.AddDays(3),
+                IsCompleted = false,
+                CreatedUserId = admin.Id,
+                CreatedDate = DateTime.UtcNow
             });
 
         context.SaveChanges();
